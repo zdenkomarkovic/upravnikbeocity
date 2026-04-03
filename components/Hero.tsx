@@ -16,19 +16,20 @@ export default function Hero() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-[#1b3a6b]/75" />
+        <div className="absolute inset-0 bg-[#1b3a6b]/60" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 text-center pt-24 pb-16">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 text-center pt-24 pb-52 md:pb-16">
         <div className="inline-block border border-[#c8972a]/60 rounded-full px-5 py-1.5 mb-6">
-          <span className="text-[#c8972a] text-sm font-semibold uppercase tracking-widest">
+          <span className="text-[#c8972a] text-xs sm:text-sm font-semibold uppercase tracking-wider sm:tracking-widest">
             Profesionalni upravnik zgrade – Beograd
           </span>
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-          <span className="text-[#c8972a]">Beo City Upravnik</span> –<br className="hidden md:block" /> profesionalni upravnik zgrade Beograd
+          <span className="text-[#c8972a]">Beo City Upravnik</span> –
+          <br className="hidden md:block" /> profesionalni upravnik zgrade Beograd
         </h1>
 
         <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -49,7 +50,7 @@ export default function Hero() {
           </Link>
           <Link
             href="#usluge"
-            className="border-2 border-white/70 hover:border-white text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 hover:bg-white/10"
+            className="hidden sm:block border-2 border-white/70 hover:border-white text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 hover:bg-white/10"
           >
             Naše usluge
           </Link>

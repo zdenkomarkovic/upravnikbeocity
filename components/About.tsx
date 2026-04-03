@@ -31,31 +31,27 @@ export default function About() {
               Ko smo mi?
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1b3a6b] mt-2 mb-6 leading-tight">
-              Profesionalni upravnik zgrade <br />kome možete verovati
+              Profesionalni upravnik zgrade <br />
+              kome možete verovati
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-5">
-              <strong className="text-[#1b3a6b]">Beo City Upravnik</strong> je
-              preduzeće specijalizovano za profesionalno upravljanje stambenim
-              zajednicama i objektima na teritoriji Beograda – od ulaza i lifta
-              do krova, fasade i instalacija.
+              <strong className="text-[#1b3a6b]">Beo City Upravnik</strong> je preduzeće
+              specijalizovano za profesionalno upravljanje stambenim zajednicama i objektima na
+              teritoriji Beograda – od ulaza i lifta do krova, fasade i instalacija.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-5">
-              Naš tim čini sklop iskustva starijih kolega i entuzijazma mlađih
-              stručnjaka. Svaki objekat tretiramo individualno, a poslujemo u
-              skladu sa{" "}
-              <strong className="text-[#1b3a6b]">
-                Zakonom o stanovanju i održavanju zgrada
-              </strong>
-              . Cilj nam je siguran i bezbedni objekat u kome su svi stanari
-              zadovoljni, a problemi se rešavaju{" "}
-              <strong className="text-[#1b3a6b]">brzo i efikasno</strong>.
+              Naš tim čini sklop iskustva starijih kolega i entuzijazma mlađih stručnjaka. Svaki
+              objekat tretiramo individualno, a poslujemo u skladu sa{" "}
+              <strong className="text-[#1b3a6b]">Zakonom o stanovanju i održavanju zgrada</strong>.
+              Cilj nam je siguran i bezbedni objekat u kome su svi stanari zadovoljni, a problemi se
+              rešavaju <strong className="text-[#1b3a6b]">brzo i efikasno</strong>.
             </p>
 
             <div className="border-l-4 border-[#c8972a] pl-5 italic text-gray-700">
-              &ldquo;Poverite nam upravljanje – Beo City Upravnik brine o vašoj
-              zgradi kao o svojoj!&rdquo;
+              &ldquo;Poverite nam upravljanje – Beo City Upravnik brine o vašoj zgradi kao o
+              svojoj!&rdquo;
             </div>
           </div>
         </div>

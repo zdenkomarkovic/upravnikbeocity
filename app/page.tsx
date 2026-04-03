@@ -25,6 +25,13 @@ export default function HomePage() {
       <main>
         <Hero />
         <About />
+        <div className="w-full">
+          <img
+            src="/beocity.PNG"
+            alt="Beo City Upravnik – profesionalni upravnik zgrada Beograd"
+            className="w-full object-cover"
+          />
+        </div>
         <WhyUs />
         <Services />
         <Partners />
