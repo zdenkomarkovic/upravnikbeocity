@@ -22,7 +22,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 text-center pt-24 pb-52 md:pb-16">
         <div className="inline-block border border-[#c8972a]/60 rounded-full px-5 py-1.5 mb-6">
-          <span className="text-[#c8972a] text-xs sm:text-sm font-semibold uppercase tracking-wider sm:tracking-widest">
+          <span className="text-[#c8972a] text-[10px] lg:text-xl font-semibold uppercase tracking-wider sm:tracking-widest">
             Profesionalni upravnik zgrade – Beograd
           </span>
         </div>

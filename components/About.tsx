@@ -15,13 +15,15 @@ export default function About() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-2xl overflow-hidden shadow-xl border-4 border-white hidden md:block">
-              <Image
-                src="/1.png"
-                alt="Stambena zgrada kojom upravlja Beo City Upravnik"
-                fill
-                className="object-cover"
-              />
+            <div className="absolute bottom-3 right-3 w-28 h-28 md:w-40 md:h-40 md:-bottom-6 md:-right-6 rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/1.png"
+                  alt="Stambena zgrada kojom upravlja Beo City Upravnik"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
 
