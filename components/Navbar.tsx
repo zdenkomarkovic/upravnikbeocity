@@ -69,6 +69,14 @@ export default function Navbar() {
           </a>
         </nav>
 
+        {/* Phone – mobile only */}
+        <a
+          href={`tel:${CONTACT.phone}`}
+          className="md:hidden text-[#c8972a] font-semibold text-sm"
+        >
+          {CONTACT.phoneDisplay}
+        </a>
+
         {/* Hamburger */}
         <button
           className="md:hidden text-white p-2"
