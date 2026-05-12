@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/constants";
@@ -14,6 +14,12 @@ const openSans = Open_Sans({
   variable: "--font-open-sans",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#1b3a6b",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -60,9 +66,9 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [
       {
-        url: `${SITE_URL}/logo.jpeg`,
-        width: 800,
-        height: 600,
+        url: `${SITE_URL}/viber_image_2024-12-18_11-09-58-471.jpg`,
+        width: 1200,
+        height: 630,
         alt: `${SITE_NAME} – Profesionalni upravnik zgrada Beograd`,
       },
     ],
@@ -71,7 +77,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE_NAME} – Profesionalni upravnik zgrade Beograd`,
     description: SITE_DESCRIPTION,
-    images: [`${SITE_URL}/logo.jpeg`],
+    images: [`${SITE_URL}/viber_image_2024-12-18_11-09-58-471.jpg`],
+  },
+  icons: {
+    icon: [{ url: "/logo.jpeg", type: "image/jpeg" }],
+    apple: [{ url: "/logo.jpeg" }],
+    shortcut: "/logo.jpeg",
   },
   alternates: {
     canonical: SITE_URL,

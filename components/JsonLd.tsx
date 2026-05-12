@@ -40,8 +40,9 @@ export default function JsonLd() {
       telephone: CONTACT.phone,
       contactType: "customer service",
       availableLanguage: "Serbian",
-areaServed: "RS",
+      areaServed: "RS",
     },
+    foundingDate: "2021",
     areaServed: {
       "@type": "City",
       name: "Beograd",

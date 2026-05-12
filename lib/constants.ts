@@ -4,7 +4,7 @@ export const SITE_URL =
 export const SITE_NAME = "Beo City Upravnik";
 
 export const SITE_DESCRIPTION =
-  "Vaš pouzdan partner za profesionalno upravljanje zgradama u Beogradu. Sa četiri godine iskustva i preko 700 zadovoljnih klijenata.";
+  "Profesionalni upravnik stambene zajednice u Beogradu. Tekuće održavanje zgrade, hitne intervencije 24/7. Preko 700 zadovoljnih klijenata. Besplatna ponuda.";
 
 export const CONTACT = {
   address: "Prvog Maja 42a, Beograd",

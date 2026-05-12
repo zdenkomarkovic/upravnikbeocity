@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { buildMetadata } from "@/lib/metadata";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -15,6 +16,7 @@ export const metadata = buildMetadata({
   description:
     "Beo City Upravnik – profesionalni upravnik stambenih zajednica u Beogradu. Tekuće održavanje, hitne intervencije 24/7, više od 700 zadovoljnih klijenata. Besplatna ponuda.",
   url: "https://upravnikbeocity.com",
+  image: "/viber_image_2024-12-18_11-09-58-471.jpg",
 });
 
 export default function HomePage() {
@@ -26,10 +28,12 @@ export default function HomePage() {
         <Hero />
         <About />
         <div className="w-full">
-          <img
+          <Image
             src="/beocity.PNG"
-            alt="Beo City Upravnik – profesionalni upravnik zgrada Beograd"
-            className="w-full object-cover"
+            alt="Beo City Upravnik – tim profesionalnih upravnika zgrada Beograd"
+            width={1920}
+            height={800}
+            className="w-full h-auto"
           />
         </div>
         <WhyUs />
