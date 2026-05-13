@@ -103,19 +103,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="sr" className={`${montserrat.variable} ${openSans.variable}`}>
-      <body className="antialiased">{children}</body>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=AW-17745198778"
-        strategy="afterInteractive"
-      />
-      <Script id="google-ads-config" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-17745198778');
-        `}
-      </Script>
+      <body className="antialiased">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17745198778"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17745198778');
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
