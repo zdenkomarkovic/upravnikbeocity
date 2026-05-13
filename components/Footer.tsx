@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CONTACT, SITE_NAME } from "@/lib/constants";
+import PhoneLink from "@/components/PhoneLink";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -63,9 +64,9 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-white/60">
               <li>
-                <a href={`tel:${CONTACT.phone}`} className="hover:text-white transition-colors">
+                <PhoneLink className="hover:text-white transition-colors">
                   📞 {CONTACT.phoneDisplay}
-                </a>
+                </PhoneLink>
               </li>
               <li>
                 <a href={`mailto:${CONTACT.email}`} className="hover:text-white transition-colors break-all">

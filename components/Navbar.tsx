@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { CONTACT } from "@/lib/constants";
+import PhoneLink from "@/components/PhoneLink";
 
 const navLinks = [
   { href: "#o-nama", label: "O nama" },
@@ -61,21 +62,15 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href={`tel:${CONTACT.phone}`}
-            className="bg-[#c8972a] hover:bg-[#e0b04a] text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors duration-200"
-          >
+          <PhoneLink className="bg-[#c8972a] hover:bg-[#e0b04a] text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors duration-200">
             {CONTACT.phoneDisplay}
-          </a>
+          </PhoneLink>
         </nav>
 
         {/* Phone – mobile only */}
-        <a
-          href={`tel:${CONTACT.phone}`}
-          className="md:hidden text-[#c8972a] font-semibold text-sm"
-        >
+        <PhoneLink className="md:hidden text-[#c8972a] font-semibold text-sm">
           {CONTACT.phoneDisplay}
-        </a>
+        </PhoneLink>
 
         {/* Hamburger */}
         <button
@@ -102,12 +97,9 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href={`tel:${CONTACT.phone}`}
-            className="mt-4 block text-center bg-[#c8972a] text-white font-semibold py-3 rounded-full"
-          >
+          <PhoneLink className="mt-4 block text-center bg-[#c8972a] text-white font-semibold py-3 rounded-full">
             {CONTACT.phoneDisplay}
-          </a>
+          </PhoneLink>
         </div>
       )}
     </header>

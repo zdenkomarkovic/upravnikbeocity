@@ -1,5 +1,6 @@
 import { CONTACT } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
+import PhoneLink from "@/components/PhoneLink";
 
 export default function Contact() {
   return (
@@ -39,12 +40,9 @@ export default function Contact() {
               </div>
               <div>
                 <p className="font-bold text-[#1b3a6b] mb-1">Telefon / Viber</p>
-                <a
-                  href={`tel:${CONTACT.phone}`}
-                  className="text-[#c8972a] font-semibold text-lg hover:underline"
-                >
+                <PhoneLink className="text-[#c8972a] font-semibold text-lg hover:underline">
                   {CONTACT.phoneDisplay}
-                </a>
+                </PhoneLink>
                 <p className="text-gray-500 text-sm mt-1">
                   Dostupni za hitne intervencije 24 sata / 7 dana u nedelji
                 </p>
