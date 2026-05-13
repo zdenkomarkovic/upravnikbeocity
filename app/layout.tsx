@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/constants";
 
@@ -103,6 +104,18 @@ export default function RootLayout({
   return (
     <html lang="sr" className={`${montserrat.variable} ${openSans.variable}`}>
       <body className="antialiased">{children}</body>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17745198778"
+        strategy="afterInteractive"
+      />
+      <Script id="google-ads-config" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17745198778');
+        `}
+      </Script>
     </html>
   );
 }
